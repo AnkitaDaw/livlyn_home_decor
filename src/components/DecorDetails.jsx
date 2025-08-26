@@ -28,7 +28,7 @@ const DecorDetails = ({product}) => {
                                 <h6 className="prod_price mb-3 mb-xl-4">₹{product.price.currentPrice} &nbsp; <span><s>₹{product.price.originalPrice}</s></span></h6>
                                 <p className="mb-2">{product.prodDescription}</p>
                                 <ul className="list-unstyled mb-3">
-                                    {allProducts.features.map((feature, index) => (
+                                    {product.features.map((feature, index) => (
                                         <li key={index}>{feature}</li>
                                     ))}
                                 </ul>
