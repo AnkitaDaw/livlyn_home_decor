@@ -1,0 +1,1098 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.cta_text .cta_btn, .theme_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: #222222;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 2px solid #222222;
+  padding: 18px 35px;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  color: #222222;
+}
+
+a, a:hover, a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.theme_btn:hover {
+  background-color: #222222;
+  color: #fff;
+}
+
+.sec_title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #222222;
+  font-family: "Andada Pro", serif;
+  padding-bottom: 25px;
+  position: relative;
+}
+.sec_title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background-color: #989898;
+  display: none;
+}
+
+.heading_sec .sec_title::after {
+  display: block;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  z-index: 9;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+}
+
+.navbar-nav {
+  gap: 40px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #222222;
+}
+
+.menu_right li img {
+  width: 22px;
+  height: 22px;
+}
+.menu_right li .cart_count {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.banner_sec {
+  background-image: url(../images/banner_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 170px 0;
+  z-index: 1;
+}
+
+.banner_text h1 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 70px;
+  font-family: "Andada Pro", serif;
+}
+.banner_text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #989898;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.prod_sec {
+  position: relative;
+  padding: 80px 0;
+}
+
+.prod_box {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border: 3px solid #EEEEEE;
+}
+.prod_box .prod_details h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Andada Pro", serif;
+  font-style: italic;
+  color: #222222;
+}
+.prod_box .prod_details h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: #222222;
+}
+.prod_box .prod_details h6 span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #989898;
+}
+.prod_box .prod_box_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.prod_box .hover_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #EEEEEE;
+  transition: all 0.4s ease-in-out;
+}
+.prod_box .hover_btn:hover {
+  background-color: #fff;
+}
+.prod_box:hover .prod_box_overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cta_sec {
+  background-image: url(../images/cta_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 120px 0;
+  z-index: 1;
+}
+.cta_sec.light {
+  background-image: url(../images/cta_light_bg.jpg);
+}
+
+.cta_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.cta_text .cta_btn {
+  background-color: #EEEEEE;
+  color: #222222;
+  border-color: #EEEEEE;
+}
+.cta_text .cta_btn:hover {
+  background-color: #222222;
+  color: #EEEEEE;
+  border-color: #222222;
+}
+
+.featured_sec {
+  position: relative;
+  padding: 80px 0;
+}
+.featured_sec.review .featured_review_img {
+  width: 250px;
+  height: 250px;
+}
+.featured_sec.review .featured_review_text {
+  flex: 1;
+}
+.featured_sec.review .featured_review_text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  font-family: "Andada Pro", serif;
+}
+.featured_sec.review .featured_review_text p {
+  font-size: 15px;
+}
+.featured_sec.review .featured_review_text .featured_review_price {
+  font-size: 18px;
+  font-weight: 500;
+}
+.featured_sec.review .featured_review_text .featured_review_price span {
+  font-size: 14px;
+  color: #989898;
+}
+
+.featured_text p {
+  color: #989898;
+}
+.featured_text .price_wrap h5 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  color: #222222;
+}
+.featured_text .price_wrap h5 span {
+  font-size: 20px;
+  color: #989898;
+}
+.featured_text .featured_img_wrap img {
+  flex: 1;
+}
+
+.featured_prod .prod_specification p {
+  padding: 15px 0;
+  margin-bottom: 0;
+  border-top: 1px solid #989898;
+}
+.featured_prod .prod_specification p:first-child {
+  border-top: none;
+}
+.featured_prod .prod_specification p:last-child {
+  padding-bottom: 0;
+}
+.featured_prod .prod_specification p span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #989898;
+}
+.featured_prod .prod_specification p span:last-child {
+  color: #222222;
+}
+
+.benefit_sec {
+  background-image: url(../images/texture_bg.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+  padding: 60px 0;
+  z-index: 1;
+}
+
+.benefit_box.bordered {
+  border-left: 2px solid #EEEEEE;
+  border-right: 2px solid #EEEEEE;
+}
+.benefit_box .benefit_icon {
+  width: 70px;
+  height: 70px;
+}
+.benefit_box .benefit_text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: "Andada Pro", serif;
+  color: #222222;
+}
+.benefit_box .benefit_text p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #989898;
+}
+
+.review_sec {
+  position: relative;
+  padding: 40px 0 80px;
+  z-index: 1;
+}
+.review_sec::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  background-image: url(../images/texture_bg.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  z-index: -1;
+}
+.review_sec.inner_page {
+  padding: 80px 0;
+}
+.review_sec.inner_page::after {
+  display: none;
+}
+
+.review_text_wrap .sec_title::after {
+  left: 0;
+  transform: none;
+}
+.review_text_wrap p {
+  color: #989898;
+}
+
+.review_slider_wrap .review_slider{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.review_slider_wrap .swiper-button-prev,
+.review_slider_wrap .swiper-button-next {
+  width: 25px;
+  height: 25px;
+  color: #989898;
+}
+.review_slider_wrap .swiper-button-prev::after,
+.review_slider_wrap .swiper-button-next::after {
+  font-size: 25px;
+}
+.review_slider_wrap .swiper-button-prev{
+  left: -5px;
+}
+.review_slider_wrap .swiper-button-next{
+  right: -5px;
+}
+
+.review_box {
+  background-color: #F6F6F6;
+}
+.review_box .quote_img {
+  width: 80px;
+  height: auto;
+  right: 1.5rem;
+  transform: translateY(-70%);
+}
+.review_box .review_img {
+  position: relative;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+.review_box .review_text p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #989898;
+}
+.review_box .review_text h5 {
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Andada Pro", serif;
+  color: #222222;
+}
+
+.footer_top {
+  background-color: #161413;
+  padding: 50px 0;
+}
+.footer_top .footer_box .footer_logo {
+  max-width: 150px;
+  filter: brightness(0) invert(1);
+}
+.footer_top .footer_box p, .footer_top .footer_box a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #EEEEEE;
+}
+.footer_top .footer_box h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  font-style: italic;
+  color: #fff;
+  font-family: "Andada Pro", serif;
+}
+.footer_top .footer_box ul li + li {
+  margin-top: 5px;
+}
+.footer_top .footer_box .social_icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  color: #222222;
+  transition: all 0.4s ease-in-out;
+}
+.footer_top .footer_box .social_icon:hover {
+  background-color: #989898;
+  color: #fff;
+}
+
+.copyright_sec {
+  background-color: #222222;
+}
+.copyright_sec p {
+  font-size: 14px;
+}
+
+.inner_sec {
+  background-image: url(../images/inner_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 0;
+  z-index: 1;
+}
+.inner_sec::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.inner_sec h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  font-family: "Andada Pro", serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+.inner_sec p {
+  font-size: 20px;
+  line-height: 1;
+}
+.inner_sec p a {
+  text-underline-offset: 4px;
+}
+
+.faq_sec {
+  position: relative;
+  padding: 80px 0;
+}
+
+.faq_wrap .accordion-item {
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+.faq_wrap .accordion-item .accordion-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Andada Pro", serif;
+  font-style: italic;
+  padding: 24px 14px;
+  gap: 1rem;
+}
+.faq_wrap .accordion-item .accordion-button:hover{
+  z-index: 1;
+}
+.faq_wrap .accordion-item .accordion-button:focus {
+  box-shadow: none;
+  z-index: 1;
+}
+.faq_wrap .accordion-item .accordion-button::after {
+  content: "+";
+  background-image: none;
+  font-style: normal;
+  transform: rotate(0);
+}
+.faq_wrap .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.faq_wrap .accordion-item .accordion-button:not(.collapsed)::after {
+  content: "-";
+  font-size: 40px;
+  line-height: 0.3;
+}
+.faq_wrap .accordion-item .accordion-body {
+  padding: 24px 14px;
+}
+.faq_wrap .accordion-item .accordion-body p {
+  color: #989898;
+  margin: 0;
+}
+
+.details_sec {
+  position: relative;
+  padding: 80px 0;
+}
+.details_sec .prod_img {
+  background-color: #F6F6F6;
+  padding: 50px;
+  height: 560px;
+}
+.details_sec .prod_details h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Andada Pro", serif;
+  font-style: italic;
+}
+.details_sec .prod_details h6 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+  color: #222222;
+  letter-spacing: 0.5px;
+}
+.details_sec .prod_details h6 span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #989898;
+}
+.details_sec .prod_details p {
+  color: #989898;
+}
+.details_sec .prod_details p i {
+  color: #FFC300;
+}
+.details_sec .prod_details ul {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #989898;
+  padding-left: 20px;
+}
+.details_sec .prod_details ul li {
+  padding: 6px 0;
+  position: relative;
+}
+.details_sec .prod_details ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  background-color: #222222;
+  border-radius: 100%;
+}
+
+.cart_sec {
+  position: relative;
+  padding: 80px 0;
+}
+.cart_sec .cart_heading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Andada Pro", serif;
+}
+
+.cart_row {
+  background-color: #F6F6F6;
+  border-radius: 4px;
+}
+.cart_row .cart_img {
+  background-color: #F3F3F3;
+  border-radius: 4px;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.cart_row .cart_prod_details h5 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Andada Pro", serif;
+  font-style: italic;
+}
+.cart_row .cart_prod_details h6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+.cart_row .cart_prod_details h6 span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #989898;
+}
+.cart_row .quantity_change button {
+  background-color: #fff;
+  color: #000;
+}
+.cart_row .quantity_change button:hover {
+  background-color: #989898;
+  color: #fff;
+}
+.cart_row .quantity_change .quantity_count {
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Andada Pro", serif;
+}
+.cart_row .cart_prod_price {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.cart_total_box {
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.05);
+}
+.cart_total_box .cart_total_price p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.cart_total_box .cart_total p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Andada Pro", serif;
+  margin: 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #D9D9D9;
+}
+
+.checkout_sec {
+  position: relative;
+  padding: 80px 0;
+}
+.checkout_sec .heading_sec p {
+  color: #989898;
+}
+
+.checkout_form .checkout_heading {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  font-family: "Andada Pro", serif;
+  color: #222222;
+  font-style: italic;
+}
+.checkout_form input, .checkout_form select {
+  height: 48px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1;
+  color: #989898;
+  padding: 10px 15px;
+}
+.checkout_form input::-moz-placeholder {
+  color: #989898;
+}
+.checkout_form input::placeholder {
+  color: #989898;
+}
+
+.thank_sec {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.thank_sec::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%237A7A7A' stroke-width='2' stroke-dasharray='8%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  z-index: -1;
+}
+.thank_sec .thank_text h2 {
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 120px;
+  font-family: "Andada Pro", serif;
+  color: #000;
+  position: relative;
+}
+.thank_sec .thank_text h2 span {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  font-family: "Inter", sans-serif;
+  color: #989898;
+}
+.thank_sec .thank_text h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background-color: #E99E08;
+}
+.thank_sec .thank_text p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #989898;
+}
+.thank_sec .thank_text p span {
+  color: #222222;
+}
+
+@media screen and (max-width: 1399px) {
+  .theme_btn {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .sec_title {
+    font-size: 40px;
+    line-height: 45px;
+    padding-bottom: 20px;
+  }
+  .sec_title::after {
+    width: 75px;
+  }
+  .banner_sec {
+    padding: 120px 0;
+  }
+  .banner_text h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .banner_text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .prod_sec, .cta_sec, .featured_sec, .faq_sec, .details_sec, .cart_sec, .checkout_sec {
+    padding: 70px 0;
+  }
+  .prod_box {
+    padding: 20px;
+  }
+  .prod_box .prod_details h4 {
+    font-size: 20px;
+  }
+  .prod_box .prod_details h6 {
+    font-size: 16px;
+  }
+  .prod_box .prod_details h6 span {
+    font-size: 14px;
+  }
+  .cta_text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .cta_text .cta_btn {
+    font-size: 16px;
+    padding: 18px 35px;
+  }
+  .featured_text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .featured_text h5 {
+    font-size: 18px;
+  }
+  .featured_text .price_wrap h5 {
+    font-size: 24px;
+  }
+  .featured_text .price_wrap h5 span {
+    font-size: 18px;
+  }
+  .featured_sec.review .featured_review_img {
+    width: 180px;
+    height: 180px;
+  }
+  .featured_sec.review .featured_review_text h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .featured_sec.review .featured_review_text p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #989898;
+  }
+  .featured_prod .prod_specification p {
+    padding: 12px 0;
+  }
+  .featured_prod .prod_specification p span {
+    font-size: 15px;
+  }
+  .review_sec {
+    padding: 40px 0 60px;
+  }
+  .inner_sec {
+    padding: 80px 0;
+  }
+  .inner_sec h2 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .inner_sec p {
+    font-size: 16px;
+  }
+  .inner_sec p a {
+    text-underline-offset: 3px;
+  }
+  .thank_sec .thank_text h2 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .thank_sec .thank_text h2 span {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .thank_sec .thank_text h2::after {
+    width: 80px;
+  }
+  .thank_sec .thank_text p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .theme_btn {
+    font-size: 15px;
+    padding: 15px 30px;
+  }
+  .sec_title {
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 20px;
+  }
+  .sec_title::after {
+    width: 75px;
+  }
+  .banner_sec {
+    padding: 100px 0;
+  }
+  .banner_text h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner_text p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .prod_sec, .cta_sec, .featured_sec, .faq_sec, .details_sec, .cart_sec, .checkout_sec {
+    padding: 60px 0;
+  }
+  .prod_box {
+    padding: 15px;
+  }
+  .prod_box .prod_details h4 {
+    font-size: 18px;
+  }
+  .prod_box .prod_details h6 {
+    font-size: 16px;
+  }
+  .prod_box .prod_details h6 span {
+    font-size: 14px;
+  }
+  .cta_sec.light {
+    background-position: center left;
+  }
+  .cta_text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .cta_text .cta_btn {
+    font-size: 15px;
+    padding: 18px 35px;
+  }
+  .featured_text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .featured_text h5 {
+    font-size: 16px;
+  }
+  .featured_text .price_wrap h5 {
+    font-size: 24px;
+  }
+  .featured_text .price_wrap h5 span {
+    font-size: 16px;
+  }
+  .featured_sec.review .featured_review_img {
+    width: 180px;
+    height: 180px;
+  }
+  .featured_sec.review .featured_review_text h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .featured_sec.review .featured_review_text p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #989898;
+  }
+  .featured_prod .prod_specification p {
+    padding: 10px 0;
+  }
+  .featured_prod .prod_specification p span {
+    font-size: 14px;
+  }
+  .review_sec {
+    padding: 40px 0 60px;
+  }
+  .review_sec::after {
+    height: 50%;
+  }
+  .review_sec.inner_page {
+    padding: 60px 0;
+  }
+  .inner_sec {
+    padding: 70px 0;
+  }
+  .inner_sec h2 {
+    font-size: 35px;
+  }
+  .inner_sec p {
+    font-size: 15px;
+  }
+  .inner_sec p a {
+    text-underline-offset: 2px;
+  }
+  .checkout_form .checkout_heading {
+    font-size: 24px;
+    line-height: 1;
+  }
+  .thank_sec .thank_text h2 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .thank_sec .thank_text h2 span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .thank_sec .thank_text h2::after {
+    width: 70px;
+  }
+  .thank_sec .thank_text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .banner_sec {
+    padding: 80px 0;
+  }
+  .featured_sec.review .featured_review_img {
+    width: 120px;
+    height: 120px;
+  }
+  .faq_wrap .accordion-item .accordion-button {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 20px 14px;
+  }
+  .faq_wrap .accordion-item .accordion-button:not(.collapsed)::after {
+    font-size: 35px;
+    line-height: 0.3;
+  }
+  .faq_wrap .accordion-item .accordion-body {
+    padding: 20px 14px;
+  }
+  .faq_wrap .accordion-item .accordion-body p {
+    font-size: 15px;
+  }
+  .checkout_form input, .checkout_form select {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner_sec {
+    padding: 60px 0;
+  }
+  .benefit_box.bordered {
+    border-top: 2px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
+    border-left: none;
+    border-right: none;
+  }
+  .review_sec.inner_page {
+    padding: 50px 0;
+  }
+  .faq_wrap .accordion-item .accordion-button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 18px 14px;
+  }
+  .faq_wrap .accordion-item .accordion-button:not(.collapsed)::after {
+    font-size: 30px;
+    line-height: 0.2;
+  }
+  .faq_wrap .accordion-item .accordion-body {
+    padding: 18px 14px;
+  }
+  .faq_wrap .accordion-item .accordion-body p {
+    font-size: 14px;
+  }
+  .details_sec .prod_img {
+    padding: 30px;
+    height: 360px;
+  }
+  .details_sec .prod_details h3 {
+    font-size: 30px;
+  }
+  .details_sec .prod_details h6 {
+    font-size: 22px;
+  }
+  .details_sec .prod_details h6 span {
+    font-size: 16px;
+  }
+  .details_sec .prod_details p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .details_sec .prod_details ul {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 15px;
+  }
+  .details_sec .prod_details ul li {
+    padding: 5px 0;
+  }
+  .details_sec .prod_details ul li::after {
+    left: -15px;
+    width: 5px;
+    height: 5px;
+  }
+  .checkout_form input, .checkout_form select {
+    font-size: 14px;
+  }
+  .thank_sec::after {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+  }
+  .thank_sec .thank_text h2 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .thank_sec .thank_text h2 span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .thank_sec .thank_text h2::after {
+    width: 60px;
+  }
+  .thank_sec .thank_text p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
