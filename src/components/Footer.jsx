@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {
     return (
         <>
-            <footer>
+            <footer id="footer">
                 <div className="footer_top">
                     <div className="container-xl">
                         <div className="row justify-content-between">

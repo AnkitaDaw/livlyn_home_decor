@@ -10,7 +10,7 @@ const Review = ({innerPageClass}) => {
 
     return (
         <>
-            <section className={"review_sec" + innerPageClass}>
+            <section className={"review_sec" + innerPageClass} id="review">
                 <div className="container-xl">
                     <div className="row">
                         <div className="col-xl-4 col-md-12 col-12">

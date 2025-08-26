@@ -45,7 +45,7 @@ function HomePage() {
 
 
             {/* Featured Sec */}
-            <section className="featured_sec">
+            <section className="featured_sec" id="featured">
                 <div className="container-xl">
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-12">

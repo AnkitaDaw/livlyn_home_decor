@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Offcanvas, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 function Header() {
@@ -16,19 +18,19 @@ function Header() {
                 <Offcanvas.Body>
                     <ul className="navbar-nav gap-4 mx-auto mb-0">
                         <li className="nav-item">
-                            <a className="nav-link p-0" href="index.html">Home</a>
+                            <Link to="/" className="nav-link p-0">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link p-0" href="#">Features</a>
+                            <HashLink smooth to="/#featured" className="nav-link p-0">Features</HashLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link p-0" href="shop.html">Shop</a>
+                            <Link to="/shop" className="nav-link p-0">Shop</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link p-0" href="#">Review</a>
+                            <HashLink smooth to="/#review" className="nav-link p-0">Review</HashLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link p-0" href="#">Contact</a>
+                            <HashLink smooth to="/#footer" className="nav-link p-0">Contact</HashLink>
                         </li>
                     </ul>
                 </Offcanvas.Body>
@@ -37,33 +39,34 @@ function Header() {
             <header className="sticky-top z-2">
                 <nav className="navbar navbar-expand-lg py-2 py-md-3">
                     <div className="container-xl">
-                        <a className="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                        <Link to={"/"} className='navbar-brand'><img src="images/logo.png" alt="logo" /></Link>
+                        {/* <a className="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a> */}
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mx-auto mb-0">
                                 <li className="nav-item">
-                                    <a className="nav-link p-0" href="index.html">Home</a>
+                                    <Link to="/" className="nav-link p-0">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link p-0" href="#">Features</a>
+                                    <HashLink smooth to="/#featured" className="nav-link p-0">Features</HashLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link p-0" href="shop.html">Shop</a>
+                                    <Link to="/shop" className="nav-link p-0">Shop</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link p-0" href="#">Review</a>
+                                    <HashLink smooth to="/#review" className="nav-link p-0">Review</HashLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link p-0" href="#">Contact</a>
+                                    <HashLink smooth to="/#footer" className="nav-link p-0">Contact</HashLink>
                                 </li>
                             </ul>
                         </div>
                         <div className="menu_right">
                             <ul className="list-unstyled d-flex align-items-center gap-4 gap-md-5 gap-lg-4 mb-0">
                                 <li>
-                                    <a href="cart.html" className="cart_icon position-relative">
+                                    <Link to="/cart" className="cart_icon position-relative">
                                         <img src="images/cart.png" alt="Cart Icon" />
                                         <span className="cart_count">0</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <img src="images/search.png" alt="Search Icon" />
