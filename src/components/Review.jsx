@@ -50,9 +50,9 @@ const Review = ({innerPageClass}) => {
                                 >
                                     <SwiperSlide>
                                         <div className="review_box position-relative p-4 z-1">
-                                            <img src="images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
+                                            <img src="/images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
                                             <div className="review_img mb-3">
-                                                <img src="images/review_img1.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
+                                                <img src="/images/review_img1.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
                                             </div>
                                             <div className="review_text">
                                                 <p className="mb-3">"Absolutely love the pieces! The quality is top-notch and they completely transformed my living room. Fast delivery and great service"</p>
@@ -62,9 +62,9 @@ const Review = ({innerPageClass}) => {
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="review_box position-relative p-4 z-1">
-                                            <img src="images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
+                                            <img src="/images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
                                             <div className="review_img mb-3">
-                                                <img src="images/review_img2.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
+                                                <img src="/images/review_img2.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
                                             </div>
                                             <div className="review_text">
                                                 <p className="mb-3">"Stylish, elegant, and affordable. Every item feels handpicked with care. My home finally reflects my personality—thank you!"</p>
@@ -74,9 +74,9 @@ const Review = ({innerPageClass}) => {
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="review_box position-relative p-4 z-1">
-                                            <img src="images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
+                                            <img src="/images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
                                             <div className="review_img mb-3">
-                                                <img src="images/review_img1.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
+                                                <img src="/images/review_img1.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
                                             </div>
                                             <div className="review_text">
                                                 <p className="mb-3">"Absolutely love the pieces! The quality is top-notch and they completely transformed my living room. Fast delivery and great service"</p>
@@ -86,9 +86,9 @@ const Review = ({innerPageClass}) => {
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="review_box position-relative p-4 z-1">
-                                            <img src="images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
+                                            <img src="/images/quote_img.png" alt="" className="quote_img position-absolute top-50 z-n1" />
                                             <div className="review_img mb-3">
-                                                <img src="images/review_img2.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
+                                                <img src="/images/review_img2.jpg" alt="Review Img" className="w-100 h-100 object-fit-cover" />
                                             </div>
                                             <div className="review_text">
                                                 <p className="mb-3">"Stylish, elegant, and affordable. Every item feels handpicked with care. My home finally reflects my personality—thank you!"</p>

@@ -7,7 +7,7 @@ function Benefit() {
                         <div className="col-md-4 col-sm-6 col-12">
                             <div className="benefit_box px-4 mb-4 mb-md-0">
                                 <div className="benefit_icon mx-auto mb-4">
-                                    <img src="images/benefit_icon1.png" alt="Eco-friendly" className="w-100 h-100" />
+                                    <img src="/images/benefit_icon1.png" alt="Eco-friendly" className="w-100 h-100" />
                                 </div>
                                 <div className="benefit_text text-center">
                                     <h4 className="mb-3">Eco-friendly</h4>
@@ -18,7 +18,7 @@ function Benefit() {
                         <div className="col-md-4 col-sm-6 col-12">
                             <div className="benefit_box bordered px-4 py-4 py-md-0 mb-4 mb-md-0">
                                 <div className="benefit_icon mx-auto mb-4">
-                                    <img src="images/benefit_icon2.png" alt="Eco-friendly" className="w-100 h-100" />
+                                    <img src="/images/benefit_icon2.png" alt="Eco-friendly" className="w-100 h-100" />
                                 </div>
                                 <div className="benefit_text text-center">
                                     <h4 className="mb-3">Unbeatable quality</h4>
@@ -29,7 +29,7 @@ function Benefit() {
                         <div className="col-md-4 col-sm-6 col-12">
                             <div className="benefit_box px-4">
                                 <div className="benefit_icon mx-auto mb-4">
-                                    <img src="images/benefit_icon3.png" alt="Eco-friendly" className="w-100 h-100" />
+                                    <img src="/images/benefit_icon3.png" alt="Eco-friendly" className="w-100 h-100" />
                                 </div>
                                 <div className="benefit_text text-center">
                                     <h4 className="mb-3">Delivery to your door</h4>

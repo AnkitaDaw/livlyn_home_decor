@@ -1,5 +1,6 @@
 import InnerBanner from "../components/InnerBanner";
 import FAQ from "../components/FAQ";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function CartPage() {
     return (
@@ -17,12 +18,12 @@ function CartPage() {
                             <div className="cart_wrap d-flex flex-column gap-3">
                                 <div className="cart_row cart_empty d-flex flex-column justify-content-center align-items-center p-5">
                                     <h4 className="text-danger mb-3">Your cart is empty.</h4>
-                                    <a href="shop.html" className="theme_btn py-3 px-4 fs-6">Shop now <i className="fa fa-chevron-right"></i></a>
+                                    <a href="shop.html" className="theme_btn py-3 px-4 fs-6">Shop now <FontAwesomeIcon icon="chevron-right" /></a>
                                 </div>
                                 <div className="cart_row d-flex justify-content-between align-items-center p-3">
                                     <div className="cart_prod d-flex gap-3 align-items-center">
                                         <div className="cart_img">
-                                            <img src="images/product_img1.png" alt="Tufted Arm Chair" className="w-100 h-100 object-fit-contain" />
+                                            <img src="/images/product_img1.png" alt="Tufted Arm Chair" className="w-100 h-100 object-fit-contain" />
                                         </div>
                                         <div className="cart_prod_details d-none d-md-block">
                                             <h5 className="mb-2">Tufted Arm Chair</h5>
@@ -38,7 +39,7 @@ function CartPage() {
                                         <p className="mb-0">₹13,599</p>
                                     </div>
                                     <div className="cart_action">
-                                        <a href="#" className="remove_btn"><img src="images/delete_icon.svg" alt="Remove Product" /></a>
+                                        <a href="#" className="remove_btn"><img src="/images/delete_icon.svg" alt="Remove Product" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +71,7 @@ function CartPage() {
                                         <span className="fw-semibold" id="cart_total">₹14,598</span>
                                     </p>
                                 </div>
-                                <a href="checkout.html" className="theme_btn w-100 mt-4">Proceed To Checkout <i className="fa fa-chevron-right"></i></a>
+                                <a href="checkout.html" className="theme_btn w-100 mt-4">Proceed To Checkout <FontAwesomeIcon icon="chevron-right" /></a>
                             </div>
                         </div>
                     </div>

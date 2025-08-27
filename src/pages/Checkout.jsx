@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InnerBanner from "../components/InnerBanner";
 
 function CheckoutPage() {
@@ -124,7 +125,7 @@ function CheckoutPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" className="theme_btn w-100 mt-3" id="checkout_submit">Proceed to Checkout <i className="fa fa-chevron-right"></i></button>
+                                <button type="submit" className="theme_btn w-100 mt-3" id="checkout_submit">Proceed to Checkout <FontAwesomeIcon icon="chevron-right" /></button>
                             </form>                    
                         </div>
                     </div>

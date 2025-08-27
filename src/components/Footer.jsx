@@ -9,7 +9,7 @@ function Footer() {
                         <div className="row justify-content-between">
                             <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                                 <div className="footer_box">
-                                    <img src="images/logo.png" alt="" className="footer_logo mb-3" />
+                                    <img src="/images/logo.png" alt="" className="footer_logo mb-3" />
                                     <p className="mb-0">Elevate your living space with stylish, affordable, and timeless home decor ideas. From modern designs to cozy touches, find inspiration that makes every room feel like home.</p>
                                 </div>
                             </div>
