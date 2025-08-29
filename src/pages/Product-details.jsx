@@ -22,7 +22,7 @@ function ProductDetailsPage() {
             <InnerBanner
                 bannerTitle="Product Details"
                 pageName="Shop"
-                productName="/ prod name"
+                productName={`/ ${product.prodTitle}`}
             />
 
             <DecorDetails product={product}  />

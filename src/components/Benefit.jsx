@@ -1,7 +1,7 @@
 function Benefit() {
     return (
         <>
-            <section className="benefit_sec">
+            <section className="benefit_sec" id="features">
                 <div className="container-xl">
                     <div className="row g-0">
                         <div className="col-md-4 col-sm-6 col-12">

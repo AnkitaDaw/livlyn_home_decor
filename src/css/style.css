@@ -571,8 +571,10 @@ a, a:hover, a:focus {
 .details_sec .prod_details p {
   color: #989898;
 }
-.details_sec .prod_details p i {
+.details_sec .prod_details p i,
+.details_sec .prod_details p svg path {
   color: #FFC300;
+  fill: #FFC300;
 }
 .details_sec .prod_details ul {
   font-size: 16px;

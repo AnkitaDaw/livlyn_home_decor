@@ -22,7 +22,7 @@ function TrendyProds() {
                                     </div>
                                     <div className="prod_details text-center">
                                         <h4 className="mb-3">{product.prodTitle}</h4>
-                                        <h6 className="mb-0">₹{product.price.currentPrice} &nbsp; <span><s>₹{product.price.originalPrice}</s></span></h6>
+                                        <h6 className="mb-0">₹{(product.price.currentPrice).toLocaleString('en-IN')} &nbsp; <span><s>₹{(product.price.originalPrice).toLocaleString('en-IN')}</s></span></h6>
                                     </div>
                                     <div className="prod_box_overlay">
                                         <div className="prod_icon d-flex gap-3">

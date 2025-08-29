@@ -17,15 +17,15 @@ const DecorDetails = ({product}) => {
                                 <h3 className="mb-3">{product.prodTitle}</h3>
                                 <p className="d-flex gap-3 mb-3">
                                     <span>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
-                                        <i className="fa fa-star"></i>
+                                        <FontAwesomeIcon icon="star" />
+                                        <FontAwesomeIcon icon="star" />
+                                        <FontAwesomeIcon icon="star" />
+                                        <FontAwesomeIcon icon="star" />
+                                        <FontAwesomeIcon icon="star" />
                                     </span>
                                     <span>Loved By People</span>
                                 </p>
-                                <h6 className="prod_price mb-3 mb-xl-4">₹{product.price.currentPrice} &nbsp; <span><s>₹{product.price.originalPrice}</s></span></h6>
+                                <h6 className="prod_price mb-3 mb-xl-4">₹{(product.price.currentPrice).toLocaleString('en-IN')} &nbsp; <span><s>₹{(product.price.originalPrice).toLocaleString('en-IN')}</s></span></h6>
                                 <p className="mb-2">{product.prodDescription}</p>
                                 <ul className="list-unstyled mb-3">
                                     {product.features.map((feature, index) => (

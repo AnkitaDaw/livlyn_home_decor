@@ -4,8 +4,13 @@ import SpecialProds from "../components/SpecialProds";
 import Review from "../components/Review";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { allProducts } from "../data/product-data";
 
 function HomePage() {
+
+    const featuredProd = allProducts.filter(product => product.homeFeatured).slice(0, 1);
+    const featuredProd2 = allProducts.filter(product => product.homeFeatured).slice(1, 2);
+
     return (
         <>
 
@@ -47,45 +52,47 @@ function HomePage() {
 
 
             {/* Featured Sec */}
-            <section className="featured_sec" id="featured">
+            <section className="featured_sec">
                 <div className="container-xl">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-12 col-12">
-                            <div className="featured_text">
-                                <h2 className="sec_title pb-3 mb-0">Your Stylish Solution - The Versatile Accent Table</h2>
-                                <p className="mb-4">Saleberate Solid Mango Wood 13-Inch Wide Round Contemporary Accent Table in Warm Natural, Fully Assembled, Ideal for Living Room and Bedroom.</p>
-                                <div className="price_wrap d-flex align-items-center gap-4 pb-2 mb-4">
-                                    <h5 className="mb-0">₹13,599 &nbsp; <span><s>₹23,499</s></span></h5>
-                                    <Link to="/product-details/wooden-accent-table" className="theme_btn">Explore now <FontAwesomeIcon icon="chevron-right" /></Link>
+                    {featuredProd.map((product, index) => (
+                        <div className="row" key={index}>
+                            <div className="col-lg-6 col-md-12 col-12">
+                                <div className="featured_text">
+                                    <h2 className="sec_title pb-3 mb-0">Your Stylish Solution - The Versatile Accent Table</h2>
+                                    <p className="mb-4">Saleberate Solid Mango Wood 13-Inch Wide Round Contemporary Accent Table in Warm Natural, Fully Assembled, Ideal for Living Room and Bedroom.</p>
+                                    <div className="price_wrap d-flex align-items-center gap-4 pb-2 mb-4">
+                                        <h5 className="mb-0">₹{(product.price.currentPrice).toLocaleString('en-IN')} &nbsp; <span><s>₹{(product.price.originalPrice).toLocaleString('en-IN')}</s></span></h5>
+                                        <Link to={`/product-details/${product.slug}`} className="theme_btn">Explore now <FontAwesomeIcon icon="chevron-right" /></Link>
+                                    </div>
+                                    <div className="featured_img_wrap row d-none d-lg-flex">
+                                        <img src="/images/featured_img1.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
+                                        <img src="/images/featured_img2.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
+                                    </div>
                                 </div>
-                                <div className="featured_img_wrap row d-none d-lg-flex">
-                                    <img src="/images/featured_img1.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
-                                    <img src="/images/featured_img2.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
+                            </div>
+                            <div className="col-lg-6 col-md-12 col-12">
+                                <div className="featured_prod d-flex flex-column justify-content-between h-100">
+                                    <div className="featured_img text-center">
+                                        <img src={product.prodImg} alt="Versatile Accent Table" className="w-50 object-fit-contain" />
+                                    </div>
+                                    <div className="prod_specification">
+                                        <p className="d-flex justify-content-between">
+                                            <span>Top & Base</span>
+                                            <span>Mango Wood</span>
+                                        </p>
+                                        <p className="d-flex justify-content-between">
+                                            <span>Dimensions</span>
+                                            <span>33D x 40W x 33H</span>
+                                        </p>
+                                    </div>
+                                    <div className="featured_img_wrap row d-lg-none mt-5">
+                                        <img src="/images/featured_img1.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
+                                        <img src="/images/featured_img2.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 col-12">
-                            <div className="featured_prod d-flex flex-column justify-content-between h-100">
-                                <div className="featured_img text-center">
-                                    <img src="/images/featured_prod1.png" alt="Versatile Accent Table" className="w-50 object-fit-contain" />
-                                </div>
-                                <div className="prod_specification">
-                                    <p className="d-flex justify-content-between">
-                                        <span>Top & Base</span>
-                                        <span>Mango Wood</span>
-                                    </p>
-                                    <p className="d-flex justify-content-between">
-                                        <span>Dimensions</span>
-                                        <span>33D x 40W x 33H</span>
-                                    </p>
-                                </div>
-                                <div className="featured_img_wrap row d-lg-none mt-5">
-                                    <img src="/images/featured_img1.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
-                                    <img src="/images/featured_img2.jpg" alt="Versatile Accent Table" className="w-50 h-100 object-fit-cover" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
             {/* Featured Sec End */}
@@ -116,52 +123,54 @@ function HomePage() {
             {/* Featured Sec */}
             <section className="featured_sec review">
                 <div className="container-xl">
-                    <div className="row flex-column-reverse flex-lg-row">
-                        <div className="col-lg-6 col-md-12 col-12">
-                            <div className="featured_prod d-flex flex-column justify-content-between h-100">
-                                <div className="featured_img text-center">
-                                    <img src="/images/featured_prod2.png" alt="Coffee Table" className="w-50 object-fit-contain" />
-                                </div>
-                                <div className="prod_specification">
-                                    <p className="d-flex justify-content-between">
-                                        <span>Top & Base</span>
-                                        <span>Mango Wood</span>
-                                    </p>
-                                    <p className="d-flex justify-content-between">
-                                        <span>Dimensions</span>
-                                        <span>33D x 40W x 33H</span>
-                                    </p>
-                                </div>
-                                <div className="featured_review bg-light d-flex d-lg-none align-items-start gap-3 p-3 mt-5">
-                                    <div className="featured_review_img">
-                                        <img src="/images/featured_review_img.jpg" alt="Coffee Table" className="w-100 h-100 object-fit-cover" />
+                    {featuredProd2.map(({prodImg, slug, price:{currentPrice, originalPrice}}, index) => (
+                        <div className="row flex-column-reverse flex-lg-row" key={index}>
+                            <div className="col-lg-6 col-md-12 col-12">
+                                <div className="featured_prod d-flex flex-column justify-content-between h-100">
+                                    <div className="featured_img text-center">
+                                        <img src={prodImg} alt="Coffee Table" className="w-50 object-fit-contain" />
                                     </div>
-                                    <div className="featured_review_text">
-                                        <h4 className="mb-2">Marble Finish Wooden Coffee Table</h4>
-                                        <p className="mb-2">Stylish and sturdy, this marble finish wooden coffee table adds a touch of elegance to any room. Perfect blend of modern design & everyday function. <a href="#">Learn More</a></p>
-                                        <h5 className="featured_review_price mb-0">₹13,599 &nbsp; <span><s>₹23,499</s></span></h5>
+                                    <div className="prod_specification">
+                                        <p className="d-flex justify-content-between">
+                                            <span>Top & Base</span>
+                                            <span>Mango Wood</span>
+                                        </p>
+                                        <p className="d-flex justify-content-between">
+                                            <span>Dimensions</span>
+                                            <span>33D x 40W x 33H</span>
+                                        </p>
+                                    </div>
+                                    <div className="featured_review bg-light d-flex d-lg-none align-items-start gap-3 p-3 mt-5">
+                                        <div className="featured_review_img">
+                                            <img src="/images/featured_review_img.jpg" alt="Coffee Table" className="w-100 h-100 object-fit-cover" />
+                                        </div>
+                                        <div className="featured_review_text">
+                                            <h4 className="mb-2">Marble Finish Wooden Coffee Table</h4>
+                                            <p className="mb-2">Stylish and sturdy, this marble finish wooden coffee table adds a touch of elegance to any room. Perfect blend of modern design & everyday function. <Link to={`/product-details/${slug}`}>Learn More</Link></p>
+                                            <h5 className="featured_review_price mb-0">₹{currentPrice.toLocaleString('en-IN')} &nbsp; <span><s>₹{originalPrice.toLocaleString('en-IN')}</s></span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-12 col-12">
+                                <div className="featured_text">
+                                    <h2 className="sec_title pb-3 mb-0">Elegant and Durable!</h2>
+                                    <p className="mb-3">"This coffee table instantly elevated my living room. The marble finish looks premium and blends beautifully with the wooden base. It's sturdy, easy to clean, and has become a conversation starter when guests visit."</p>
+                                    <h5 className="mb-4">~ Priya R.</h5>
+                                    <div className="featured_review d-none d-lg-flex align-items-center gap-4">
+                                        <div className="featured_review_img">
+                                            <img src="/images/featured_review_img.jpg" alt="Coffee Table" className="w-100 h-100 object-fit-cover" />
+                                        </div>
+                                        <div className="featured_review_text">
+                                            <h4 className="mb-3">Marble Finish Wooden Coffee Table</h4>
+                                            <p>Stylish and sturdy, this marble finish wooden coffee table adds a touch of elegance to any room. Perfect blend of modern design & everyday function. <Link to={`/product-details/${slug}`}>Learn More</Link></p>
+                                            <h5 className="featured_review_price mb-0">₹{currentPrice.toLocaleString('en-IN')} &nbsp; <span><s>₹{originalPrice.toLocaleString('en-IN')}</s></span></h5>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 col-12">
-                            <div className="featured_text">
-                                <h2 className="sec_title pb-3 mb-0">Elegant and Durable!</h2>
-                                <p className="mb-3">"This coffee table instantly elevated my living room. The marble finish looks premium and blends beautifully with the wooden base. It's sturdy, easy to clean, and has become a conversation starter when guests visit."</p>
-                                <h5 className="mb-4">~ Priya R.</h5>
-                                <div className="featured_review d-none d-lg-flex align-items-center gap-4">
-                                    <div className="featured_review_img">
-                                        <img src="/images/featured_review_img.jpg" alt="Coffee Table" className="w-100 h-100 object-fit-cover" />
-                                    </div>
-                                    <div className="featured_review_text">
-                                        <h4 className="mb-3">Marble Finish Wooden Coffee Table</h4>
-                                        <p>Stylish and sturdy, this marble finish wooden coffee table adds a touch of elegance to any room. Perfect blend of modern design & everyday function. <Link to="/product-details/wooden-coffee-table">Learn More</Link></p>
-                                        <h5 className="featured_review_price mb-0">₹13,599 &nbsp; <span><s>₹23,499</s></span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
             {/* Featured Sec End */}

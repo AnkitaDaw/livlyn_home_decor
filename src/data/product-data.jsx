@@ -16,7 +16,8 @@ export const allProducts = [
             "Comfortable Cushion",
             "Sturdy Wood Frame",
             "Easy to Maintain"
-        ]
+        ],
+        "homeFeatured": false,
     },
     {
         "id": "02",
@@ -35,7 +36,8 @@ export const allProducts = [
             "Versatile Use",
             "Stable Construction",
             "Easy Assembly"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "03",
@@ -54,7 +56,8 @@ export const allProducts = [
             "Matte Finish",
             "Neutral Color Palette",
             "Compact & Lightweight"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "04",
@@ -73,7 +76,8 @@ export const allProducts = [
             "Smooth Gliding Drawers ",
             "Sturdy Construction",
             "Compact Footprint"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "05",
@@ -92,7 +96,8 @@ export const allProducts = [
             "Classic Fabric Shade",
             "Easy On/Off Switch",
             "Sturdy & Stable"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "06",
@@ -111,7 +116,8 @@ export const allProducts = [
             "Sturdy Construction",
             "Easy to Assemble",
             "Versatile Placement"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "07",
@@ -130,7 +136,8 @@ export const allProducts = [
             "Height Adjustable",
             "Easy Installation",
             "Bulb Compatibility"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "08",
@@ -149,7 +156,8 @@ export const allProducts = [
             "Comfortable Seating",
             "Stable Base",
             "Low Maintenance"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "09",
@@ -168,7 +176,8 @@ export const allProducts = [
             "Spacious Bowl",
             "Stable Base",
             "Wildlife Friendly"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "010",
@@ -187,7 +196,8 @@ export const allProducts = [
             "Smooth Finish",
             "Sturdy Construction",
             "Multi-Purpose Use"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "011",
@@ -206,7 +216,8 @@ export const allProducts = [
             "Decor-Ready Top",
             "Smooth Glide Drawers",
             "Sturdy Base"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "012",
@@ -225,7 +236,8 @@ export const allProducts = [
             "Sturdy Frame",
             "Optional Add-ons",
             "Low Maintenance"
-        ]
+        ],
+        "homeFeatured": false,
     },
         {
         "id": "013",
@@ -244,7 +256,8 @@ export const allProducts = [
             "Natural Finish",
             "Stable & Sturdy",
             "Lightweight & Portable"
-        ]
+        ],
+        "homeFeatured": true,
     },
         {
         "id": "014",
@@ -263,6 +276,7 @@ export const allProducts = [
             "Optional Storage Rack",
             "Smooth Edges",
             "Low Maintenance"
-        ]
+        ],
+        "homeFeatured": true,
     },
 ]

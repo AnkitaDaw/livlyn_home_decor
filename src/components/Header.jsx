@@ -18,19 +18,19 @@ function Header() {
                 <Offcanvas.Body>
                     <ul className="navbar-nav gap-4 mx-auto mb-0">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link p-0">Home</Link>
+                            <Link to="/" className="nav-link p-0" onClick={handleClose}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <HashLink smooth to="/#featured" className="nav-link p-0">Features</HashLink>
+                            <HashLink smooth to="/#features" className="nav-link p-0" onClick={handleClose}>Features</HashLink>
                         </li>
                         <li className="nav-item">
-                            <Link to="/shop" className="nav-link p-0">Shop</Link>
+                            <Link to="/shop" className="nav-link p-0" onClick={handleClose}>Shop</Link>
                         </li>
                         <li className="nav-item">
-                            <HashLink smooth to="/#review" className="nav-link p-0">Review</HashLink>
+                            <HashLink smooth to="/#review" className="nav-link p-0" onClick={handleClose}>Review</HashLink>
                         </li>
                         <li className="nav-item">
-                            <HashLink smooth to="/#footer" className="nav-link p-0">Contact</HashLink>
+                            <HashLink smooth to="/#footer" className="nav-link p-0" onClick={handleClose}>Contact</HashLink>
                         </li>
                     </ul>
                 </Offcanvas.Body>
@@ -47,7 +47,7 @@ function Header() {
                                     <Link to="/" className="nav-link p-0">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <HashLink smooth to="/#featured" className="nav-link p-0">Features</HashLink>
+                                    <HashLink smooth to="/#features" className="nav-link p-0">Features</HashLink>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/shop" className="nav-link p-0">Shop</Link>
